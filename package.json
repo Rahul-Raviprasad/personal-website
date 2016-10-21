@@ -1,0 +1,27 @@
+{
+  "name": "rahul",
+  "title": "Rahul",
+  "version": "1.1.0",
+  "author": "Rahul Raviprasad",
+  "description": "My personal site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahul-Raviprasad/personal-website"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3"
+  }
+}
