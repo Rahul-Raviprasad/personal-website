@@ -10,6 +10,7 @@ header {
   text-align: center;
   color: white;
   width: 100%;
+  position: relative;
 }
 header .intro-text {
   padding-top: 100px;
@@ -74,6 +75,13 @@ img {
   border-radius: 50%;
 }
 
+.container-head {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 
 
