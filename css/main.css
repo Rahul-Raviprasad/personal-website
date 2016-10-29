@@ -31,7 +31,13 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
+header {
+  height: 490px;
+}
 @media (min-width: 768px) {
+  header {
+    height: 690px;
+  }
   header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
