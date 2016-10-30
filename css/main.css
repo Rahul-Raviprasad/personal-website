@@ -77,6 +77,9 @@ img {
   padding: 1em;
 }
 
+.ml {
+  margin: 1em;
+}
 .sports {
   border-radius: 50%;
 }
@@ -88,6 +91,11 @@ img {
   top: 0;
   left: 0;
 }
+
+.progress {
+  width: 90%;
+}
+
 
 
 
