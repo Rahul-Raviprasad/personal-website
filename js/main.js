@@ -33,20 +33,21 @@ var link = svg.append("g").selectAll(".link"),
   node = svg.append("g").selectAll(".node");
 
 var classes = [
+  {	"name":"experience.4+Years", "size":139, "imports":["character.Good"]},
+  {	"name":"experience.3+Years", "size":139, "imports":["character.Awesome", "character.Don't_Mind"]},
+  {	"name":"experience.2+Years", "size":139, "imports":["character.Good"]},
+  {	"name":"experience.1+Year", "size":39, "imports":["character.Awesome", "character.Good"]},
 
-{	"name":"experience.3+Years","size":10039,"imports":["character.Awesome","character.Don't_Mind", "technology.D3","technology.JavaScript","technology.JQuery"]},
-{	"name":"experience.2+Years","size":139,"imports":["character.Good","technology.JavaScript","technology.JQuery"]},
-{	"name":"experience.New","size":39,"imports":["character.Awesome", "character.Good","technology.JavaScript","technology.JQuery"]},
+  {	"name":"character.Awesome","size":600, "imports":[]},
+  {	"name":"character.Don't_Mind","size":600, "imports":[]},
+  {	"name":"character.Good","size":600, "imports":[]},
+  {	"name":"character.OK","size":600, "imports":[]},
 
-{	"name":"character.Awesome","size":600,"imports":[]},
-{	"name":"character.Don't_Mind","size":600,"imports":[]},
-{	"name":"character.Good","size":600,"imports":[]},
-{	"name":"character.OK","size":600,"imports":[]},
-
-{	"name":"technology.JavaScript","size":600,"imports":[]},
-{	"name":"technology.JQuery","size":600,"imports":["technology.JavaScript"]},
-{	"name":"technology.Angular","size":600,"imports":["technology.JavaScript"]},
-{	"name":"technology.D3","size":600,"imports":["technology.JavaScript"]},
+  {	"name":"technology.JavaScript", "size":600, "imports":["experience.4+Years", "character.Awesome"]},
+  {	"name":"technology.JQuery", "size":600, "imports":["technology.JavaScript", "experience.1+Year"]},
+  {	"name":"technology.Angular", "size":600, "imports":["technology.JavaScript", "experience.2+Years", "character.Awesome"]},
+  {	"name":"technology.D3", "size":600, "imports":["technology.JavaScript"]},
+  {	"name":"technology.Java", "size":1600, "imports":["experience.4+Years", "character.Awesome"]}
 ];
 
   var nodes = cluster.nodes(packageHierarchy(classes)),
