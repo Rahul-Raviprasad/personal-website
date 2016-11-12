@@ -33,10 +33,11 @@ var link = svg.append("g").selectAll(".link"),
   node = svg.append("g").selectAll(".node");
 
 var classes = [
-  {	"name":"experience.4+Years", "size":139, "imports":["character.Good"]},
-  {	"name":"experience.3+Years", "size":139, "imports":["character.Awesome", "character.Don't_Mind"]},
-  {	"name":"experience.2+Years", "size":139, "imports":["character.Good"]},
-  {	"name":"experience.1+Year", "size":39, "imports":["character.Awesome", "character.Good"]},
+  {	"name":"experience.4+Years", "size":139, "imports":[]},
+  {	"name":"experience.3+Years", "size":139, "imports":[]},
+  {	"name":"experience.2+Years", "size":139, "imports":[]},
+  {	"name":"experience.1+Year", "size":39, "imports":[]},
+  {	"name":"experience.New", "size":39, "imports":[]},
 
   {	"name":"character.Awesome","size":600, "imports":[]},
   {	"name":"character.Don't_Mind","size":600, "imports":[]},
@@ -46,8 +47,10 @@ var classes = [
   {	"name":"technology.JavaScript", "size":600, "imports":["experience.4+Years", "character.Awesome"]},
   {	"name":"technology.JQuery", "size":600, "imports":["technology.JavaScript", "experience.1+Year"]},
   {	"name":"technology.Angular", "size":600, "imports":["technology.JavaScript", "experience.2+Years", "character.Awesome"]},
-  {	"name":"technology.D3", "size":600, "imports":["technology.JavaScript"]},
-  {	"name":"technology.Java", "size":1600, "imports":["experience.4+Years", "character.Awesome"]}
+  {	"name":"technology.D3", "size":600, "imports":["technology.JavaScript", "character.OK"]},
+  {	"name":"technology.Java", "size":1600, "imports":["experience.4+Years", "character.Awesome"]},
+  {	"name":"technology.Scala", "size":1600, "imports":["experience.New", "character.Don't_Mind"]},
+  {	"name":"technology.Python", "size":1600, "imports":["experience.New", "character.Don't_Mind"]}
 ];
 
   var nodes = cluster.nodes(packageHierarchy(classes)),
