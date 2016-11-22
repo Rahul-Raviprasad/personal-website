@@ -50,6 +50,7 @@ var classes = [
   {	"name":"technology.D3", "size":600, "imports":["technology.JavaScript", "character.OK"]},
   {	"name":"technology.Java", "size":1600, "imports":["experience.4+Years", "character.Awesome"]},
   {	"name":"technology.Scala", "size":1600, "imports":["experience.New", "character.Don't_Mind"]},
+  {	"name":"technology.Node", "size":1600, "imports":["technology.JavaScript", "experience.1+Year", "character.Good"]},
   {	"name":"technology.Python", "size":1600, "imports":["experience.New", "character.Don't_Mind"]}
 ];
 
