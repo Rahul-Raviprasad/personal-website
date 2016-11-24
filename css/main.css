@@ -110,8 +110,7 @@ img {
 /* --D3 Chart  ---  */
 
 .node {
-  font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  fill: #bbb;
+  font: 300 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .node:hover {
@@ -120,7 +119,7 @@ img {
 
 .link {
   stroke: steelblue;
-  stroke-opacity: .4;
+  stroke-opacity: .8;
   fill: none;
   pointer-events: none;
 }
