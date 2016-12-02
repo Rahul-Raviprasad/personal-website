@@ -103,6 +103,13 @@ img {
   width: 90%;
 }
 
+.modal-dialog {
+  width: auto;
+  margin: 0px auto;
+}
+
+
+
 
 
 
