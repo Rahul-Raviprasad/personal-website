@@ -82,3 +82,47 @@ bitWay();
 <p>
 I would personally not use it unless I am running that operation thousands of times. Since some of the operations are not very intuitive to read and maintain.
 </p>
+
+<h3>Where else can I use these?</h3>
+<ul>
+  <li>
+    <div>
+      <h4>Bit fields (flags)</h4>
+      They’re the most efficient way of representing something whose state is defined by several “yes or no” properties. ACLs are a good example; if you have let’s say 4 discrete permissions (read, write, execute, change policy), it’s better to store this in 1 byte rather than waste 4. These can be mapped to enumeration types in many languages for added convenience.
+    </div>
+  </li>
+  <li>
+    <div>
+      <h4>Compression, Encryption</h4>
+      Both of these are heavily dependent on bitwise algorithms. Look at the
+      <a src="http://en.wikipedia.org/wiki/DEFLATE">deflate algorithm </a>for an example — everything is in bits, not bytes. Look at an implementation by nodeca in
+      <a src="https://github.com/nodeca/pako/tree/master/dist">github.</a>
+
+    </div>
+  </li>
+  <li>
+    <div>
+      <h4>Graphics</h4>
+        There’s hardly enough space here to get into every area where these operators are used in graphics programming. Javascript functions for doing fast binary/hex/RGB color conversions using bitwise operations. https://gist.github.com/lrvick/2080648
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <h4>Save space</h4>
+      Bit/Byte-Based Sorting Algorithm when space is at a premium. Using bits (or bytes) instead of types that take on more memory such as Strings, Objects, or what not, allows us to be able to search, sort, and store data more efficiently. Imagine a bit/byte-based data structure versus a traditional one with respect to sorting Integers, the byte array would allow us to implement Bucket Sort with little memory consumption.
+
+      <code>
+        Bucket sort works as follows:
+        1. Set up an array of initially empty “buckets”.
+        2. Scatter: Go over the original array, putting each object in its bucket.
+        3. Sort each non-empty bucket.
+        4. Gather: Visit the buckets in order and put all elements back into the original array.
+      </code>
+    </div>
+  </li>
+</ul>
+
+<p>
+These are only few of the examples that I have added here, I have tried to provide link to the original source where possible. Please let me know your thoughts :)
+</p>
