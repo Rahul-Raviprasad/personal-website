@@ -108,7 +108,13 @@ img {
   margin: 0px auto;
 }
 
+.links {
+  color: black;
+}
 
+.links:hover {
+  color: grey;
+}
 
 
 
