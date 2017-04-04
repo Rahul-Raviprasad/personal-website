@@ -3,6 +3,17 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
+/*
+Look a cool snake 
+                    __      __     __
+                   /   \  /   \  /   \
+ ____________^____/  _  \/  ___\/ ____\_______________________________
+_________________/  /__ /  /_\   /____________________________________
+                |  / \    / \   /  \  \____
+                | /   \_/   \_ /    \    o  \
+                                     \_____/--<
+*/
+
 
 //D3 Chart
 
