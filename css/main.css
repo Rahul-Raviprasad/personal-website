@@ -168,6 +168,15 @@ img {
 .link--target {
   stroke: #2ca02c;
 }
+
+
+#edge-bundling {
+    padding-top: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+
 /* --  ---  */
 
 
